@@ -1,22 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Cinzel+Decorative|Italianno|Squada+One|Syncopate|Caveat|Pinyon+Script|Vidaloka|Poiret+One&display=swap');
+
 .App {
   text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Resume{
+  width: 80vw;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
+.language {
+  
+}
+.resume {
+  text-align: left;
+}
+.p {
+  width: 80vw;
+}
+.hr {
+  width: 82vw;
+}
+.potentialities {
+  color: slategray;
+  font-family: 'Cinzel Decorative', cursive;
+}
+.up_arrow {
+  color: grey;
+  font-family: 'Cinzel Decorative', cursive;
+  bottom: 10px;
+}
+.down_arrow {
+  color: grey;
+  font-family: 'Poiret One', cursive;
+}
+.intro {
+  font-family: 'Pinyon Script', cursive;
+  margin-top: 2em;
+  margin-bottom: 3vw;
+  display: inline-block;
+}
+.intro_mirror {
+    font-family: 'Pinyon Script', cursive;
+    display: inline-block;
+    transform: scaleX(-1); 
+    filter: FlipH; /* IE 6-7-8 */
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+.ercy_dhne {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 30pt;
+  line-height: 160px;
+  padding-bottom: 2em;
+}
+.M_R {
+  font-size: 45pt;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 60px;
+}
+.O {
+  font-size: 55pt;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 50px;
+}
+.position {
+  color: slategray;
+}
+.empty_space {
+  height: 8vw;
+}
+.buffer{
+  height: 8vw;
+}
+a {
+  color: slategrey;
 
-.App-link {
-  color: #09d3ac;
+}
+a:visited {
+  color: slategrey;
 }
