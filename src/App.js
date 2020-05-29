@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import './resume.pdf';
+import Portfolio from './Portfolio';
 /* 
 ██╗  ██╗██╗██████╗ ███████╗    ███╗   ███╗███████╗
 ██║  ██║██║██╔══██╗██╔════╝    ████╗ ████║██╔════╝
@@ -9,47 +10,43 @@ import './resume.pdf';
 ██║  ██║██║██║  ██║███████╗    ██║ ╚═╝ ██║███████╗
 ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝
 */
+
 function App() {
-
-  
-
 
   return (
     <div className="App">
       <div className="Resume">
-      <div className="empty_space"></div> 
-      <span className="intro">~& the Multipotentiality of &~
-      </span>
-      <span className="intro_mirror">~& the Multipotentiality of &~
-      </span>
-      <div className="name">
-        <p></p>
-      <span className="M_R"> M</span>
-      <span className="ercy_dhne"> E R C Y </span>
-      <span className="O">O</span>
-      <span className="ercy_dhne"> D H N E </span>
-      <span className="M_R">R</span>
-      </div>
-      <div className="intro_mirror">~& the Multipotentiality of &~
-      </div>
-      <span className="intro">~& the Multipotentiality of &~
-      </span>
-      <div className="empty_space"></div>
-      <div className="potentialities" onClick="showResume"> <a href="#resume"> Résumé</a></div>
-      <div className="down_arrow">v</div>
-      <div className="empty_space"></div>
-      <div className="resume" id="resume" >
-      <div className="resume_title">
-        <h2>Mercy Odhner</h2>
+        <div className="empty_space"></div> 
+        <div className="BusinessCard">
+        <span className="intro">~& the Multipotentiality of &~</span>
+        <span className="intro_mirror">~& the Multipotentiality of &~
+        </span>
+          <p></p>
+          <span className="M_R"> M</span>
+          <span className="ercy_dhne"> E R C Y </span>
+          <span className="O">O</span>
+          <span className="ercy_dhne"> D H N E </span>
+          <span className="M_R">R</span>
+          <p></p>
+        <div className="intro_mirror">~& the Multipotentiality of &~</div>
+        <span className="intro">~& the Multipotentiality of &~
+        </span>
+        <div className="empty_space"></div>
+        <div className="potentialities" onClick="showResume"> <a href="#resume"> Résumé</a></div>
+        <div className="down_arrow">v</div>
+        </div>
+        <div className="empty_space"></div>
+        <div className="resume" id="resume" >
+        <div className="resume_title">
+          <h2>Mercy Odhner</h2>
       </div>
       <hr />
       <p>Tenacious <a href="https://en.wikipedia.org/wiki/Multipotentiality"
-      >Multipotentialite</a> who excels in problem identification and crafting creative solutions across </p>
-      <p>fields and platforms; strong aptitude in applying both hard and soft skills and adapting to scale and scope</p>
+      >multipotentialite</a> who excels in problem identification and crafting creative solutions across fields and platforms; strong aptitude in applying both hard and soft skills and adapting to scale and scope</p>
       <hr />
       <h3>TECHNICAL EDUCATION</h3>
       <p>Academy Pgh —​ ​ A 12-week, demand-driven bootcamp in which self-managed teams study and work in: Object-oriented programming and web development, employing:</p>
-      <h5>Python3 • C# • Ruby • Rails • React • React Native • ASP.NET • Ajax • Javascript • HTML • CSS • Visual Studio Code • Visual Studio • Git • SQL • SQLight • PostgreSQL • Agile development • unit testing • TDD • RSpec • Selenium • Cucumber • APIs • SEO & SEM</h5>
+      <h5>Python3 • C# • Ruby • Rails • React • React Native • ASP.NET MVC • Ajax • JavaScript • HTML • CSS • Visual Studio Code • Visual Studio • Git • SQL • SQLight • PostgreSQL • Agile development • unit testing • TDD • RSpec • Selenium • Cucumber • APIs • SEO & SEM</h5>
       <p>to build programs from “Hello World” to fully-functional websites and applications such as a client-commissioned mobile app for business accessibility and door security.</p>
       <h3>CONTRACT BASED WORK EXPERIENCE</h3>
       <p className="position">Copy Editor — Smith &​ Diction ||​ Philadelphia <span className="dates">May ‘19 – Present</span></p>
@@ -78,8 +75,18 @@ function App() {
       <p>• Spearheaded training and implementation of a new POS system</p>
       <p> </p>
       <hr />
-      <div className="buffer"></div>
       </div>
+      <div className="footer_links">
+      {/* <span className="intro_mirror"> • ~ & t h e M u l t i p o t e n t i a l i t y  o f & ~ </span> */}
+        <a className="footer_links" href="https://github.com/MercyCoder"> GitHub</a> 
+        <a className="footer_links" href="https://www.linkedin.com/in/mercyo">LinkedIn</a>
+        <a className="footer_links" href="https://codepen.io/mercycoder">CodePen</a>
+        {/* <span className="intro"> • ~  & t h e   M u l t i p o t e n t i a l i t y  o f  &  ~  • </span> */}
+        </div>
+      <hr />
+
+      <div className="buffer">      
+      </div> 
       </div>
     </div>
     
