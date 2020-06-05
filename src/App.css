@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Cinzel+Decorative|Syncopate|Caveat|Pinyon+Script|Poiret+One&display=swap');
 
+html { /* body won't work ¯\_(ツ)_/¯ */
+  /* scroll-snap-type: y mandatory; */
+  overflow: scroll;
+}
+body {
+  overflow: scroll;
+}
 .App {
+  display: flexbox;
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
 
 }
 .Resume{
@@ -17,12 +28,13 @@
   margin-top: auto;
 
 }
-.language {
-  
+.BusinessCard {
+  flex-wrap: nowrap;
+  min-width: 470px;
+  white-space: nowrap;
 }
 .resume {
   text-align: left;
-  margin-right: 25px;
 }
 .p {
   width: 80vw;
@@ -78,6 +90,7 @@ h5 {
   font-size: 30pt;
   line-height: 160px;
   padding-bottom: 2em;
+  flex-wrap: nowrap;
 }
 .M_R {
   font-size: 45pt;
@@ -96,15 +109,16 @@ h5 {
   height: 8vw;
 }
 .buffer{
+  margin-right: auto;
+  margin-left: auto;
   height: 8vw;
 }
 a {
-  color: slategrey;
-
+  color: darkslategrey;
 }
 .dates {
   float: right;
-  margin-right: 25px;
+  margin-right: 33px;
 }
 a:visited {
   color: slategrey;
@@ -112,4 +126,11 @@ a:visited {
 hr {
   color: slategrey;
   border-top: solid;
+}
+.footer_links {
+  display: flexbox;
+  justify-content: space-between;
+  padding-right: 10%;
+  padding-left: 10%;
+  justify-self: center
 }
